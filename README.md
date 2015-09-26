@@ -5,6 +5,7 @@ After initial proof of concept it works but styles from attributes are not appli
 To work this around is to create Pooled Views types that can adapt its Views based on styles - those Pooled views would be mostly copy of original Views with public methods to update styles based on attribute set.
 
 example:
+
     PooledTextView extends TextView {
       public PooledTextView(Context context, AttributesSet attrs) {
         ....
@@ -18,3 +19,8 @@ example:
         ... logic to apply attribute changes
       }
     }
+    
+Then InjectPoolFactory when have request to create view with AttributeSet can easily updateAttributes on pooled view.
+
+
+When I get more time I will create such Views one by one (TextView, EditText, Button, etc..) and then I plan to do performance measurements to proof the case of Pool Views.
