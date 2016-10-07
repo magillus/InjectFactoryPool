@@ -5,3 +5,10 @@
 .DS_Store
 /build
 /captures
+/.idea/
+.idea/compiler.xml
+.idea/copyright/
+.idea/gradle.xml
+.idea/misc.xml
+.idea/sonarlint/
+gradle/
